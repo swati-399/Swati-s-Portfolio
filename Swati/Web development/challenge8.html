@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  font-size: 20px;
+  font-family: Verdana,  Tahoma, sans-serif;
+  text-align: center;
+}
+.main {
+  margin: 20px;
+  padding: 20px;
+  box-shadow:.4em .4em 2em #45a29e;
+}
+.heading{
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: #45a29e;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: 1.2%;
+  background-color: rgb(25, 216, 216);
+  border-radius: 10px;
+  border: 10px solid rebeccapurple;
+  height: 650px;
+}
+.rest,
+.mid,
+.nav,
+.footer,.header {
+  display: grid;
+}
+.rest {
+  grid-template-rows:1.5fr 6fr 1.5fr ;
+  grid-gap: 1.2%;
+}
+ .mid {
+  display: grid;
+  grid-template-columns: 6fr 5fr;
+  grid-gap: 1.2%;
+}
+.box{
+  color: #45a29e; 
+   background-color: #1f2833;
+  border-radius: 10px;  
+}
+.box:hover{
+    margin: 10px;
+    background-color: #323f4e;
+    color: white;
+}
+
+   
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">Grid-2 Challenge#9</div>
+        <div class="container">
+            <div class="nav">
+                <div class="box">Nav Tab</div>
+            </div>
+            <div class="rest">
+                <div class="header">
+                    <div class="box">Header</div>
+                </div>
+                <div class="mid">
+                    <div class="box">Article</div>
+                    <div class="box">Ads</div>
+                </div>
+                <div class="footer">
+                    <div class="box"> Footer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
